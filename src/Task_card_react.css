@@ -1,0 +1,124 @@
+.parent{
+    width: 336px;
+    height: 192px;
+    border: 2px solid black;
+    /* background-image: url(./thub2.jpeg); */
+    background-image:linear-gradient( rgba(0,153, 76, 0.55), rgba(2, 43, 22,0.95)),url(./thub2.jpeg);
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 10px 5px rgba(0,153, 76, 0.55);
+    border-radius: 5px;
+    position: relative;
+    top:50px;
+    left:50px;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-image: url("./myimagethub.jpeg");
+    background-size: contain;
+    box-shadow: 0px 0px 5px 5px  rgb(0, 59, 6);
+    position: relative;
+    top:-85px;
+    left:60px;
+}
+.box1{
+    width: 250px;
+    height: 1px;
+    border: 2px solid rgba(2, 118, 23, 0.853);
+    background-color: rgba(2, 118, 23, 0.853);
+    position: relative;
+    top:-60px;
+    right: -135px;
+}
+.box2{
+    width: 200px;
+    height: 1px;
+    border: 2px solid rgba(8, 160, 13);
+    background-color: rgba(8, 160, 13);
+    position: relative;
+    top:-68px;
+    right: -185px;
+}
+.box3{
+    width: 150px;
+    height: 1px;
+    border: 2px solid rgba(248, 252, 0.4);
+    background-color: rgba(248, 252, 0.4);
+    position: relative;
+    top:-77px;
+    right: -235px;
+}
+.thub{
+    position: relative;
+    top:-255px;
+    right: -55px;
+}
+.aditya{
+    position: relative;
+    top:-253px;
+    right: -188px;
+}
+.name{
+font-family: "Lora", serif;
+font-size: medium;
+color: white;
+/* color: rgb(247,271,191);
+text-shadow: 0px 0px 60px rgb(255, 255, 255); */
+position: relative;
+top:-243px;
+right: -190px;
+}
+.role{
+    font-family: "Lora", serif;
+    font-size: x-small;
+    color: white;
+    position: relative;
+    top:-233px;
+    right: -190px;
+}
+.mail{
+    font-family: "Lora", serif;
+    font-size: xx-small;
+    color: white;
+    position: relative;
+    top:-223px;
+    right: -223px;
+}
+.linkedin{
+    font-family: "Lora", serif;
+    font-size: xx-small;
+    color: white;
+    position: relative;
+    top:-213px;
+    right: -223px;
+}
+.github{
+    font-family: "Lora", serif;
+    font-size: xx-small;
+    color: white;
+    position: relative;
+    top:-203px;
+    right: -223px;
+}
+.fa-envelope{
+    position: relative;
+    top:-258px;
+    right: -195px;
+}
+.fa-linkedin{
+    position: relative;
+    top:-238px;
+    right: -175px;
+}
+.fa-github{
+    position: relative;
+    top:-217px;
+    right: -157px;
+}
+.fa-react{
+    position: relative;
+    top:-282px;
+    right: -241px;
+}
