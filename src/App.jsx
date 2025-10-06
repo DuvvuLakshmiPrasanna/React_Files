@@ -29,7 +29,7 @@ function App() {
             <Link to="/services">Services</Link>
             <br />
           </li>
-        </ul>
+        </ul>  
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
