@@ -9,7 +9,7 @@ import Comp2 from "./comp2";
 import Hook1 from "./Hook1";
 
 import React from "react";
-import {BrowserRouter,Route,Routes,Link} from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Home from "./Home";
 import Team from "./Team";
 import Services from "./Services";
@@ -17,25 +17,26 @@ import Services from "./Services";
 function App() {
   return (
     <BrowserRouter>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/team">Team</Link>
-            </li>
-            <li>
-              <Link to="/services">Services</Link><br/>
-            </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="*" element={<h1>404 Not Found</h1>} />
-        </Routes>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/team">Team</Link>
+          </li>
+          <li>
+            <Link to="/services">Services</Link>
+            <br />
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
+      </Routes>
     </BrowserRouter>
   );
 }
