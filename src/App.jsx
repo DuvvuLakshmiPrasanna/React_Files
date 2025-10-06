@@ -7,63 +7,84 @@ import Myimage from "./assets/react.svg";
 import Comp1 from "./comp1";
 import Comp2 from "./comp2";
 import Hook1 from "./Hook1";
-import UseState from "./UseState";
 
-import { useState,useEffect } from "react";
+import React from "react";
+import {BrowserRouter,Route,Routes,Link} from "react-router-dom";
+import Home from "./Home";
+import Team from "./Team";
+import Services from "./Services";
 
 function App() {
-  // var MyCards = [
-  //   {
-  //     image: Myimage,
-  //     Price: "200/-",
-  //     Brand: "USPA",
-  //   },
-  //   {
-  //     image: Myimage,
-  //     Price: "50000/-",
-  //     Brand: "Thub",
-  //   },
-  //   {
-  //     image: Myimage,
-  //     Price: "30000/-",
-  //     Brand: "Aditya",
-  //   },
-  //   {
-  //     image: Myimage,
-  //     Price: "5000/-",
-  //     Brand: "Rare Rabbit",
-  //   },
-  // ];
-  // var x=false;
-  
-  const [x, Setx] = useState(0);
-  useEffect(() => {
-    console.log("Excuted");
-
-  }, [x]);
   return (
-    
-    // <div class="parent">
-    //   {MyCards.map((ele) => {
-    //     return <FunctionComponent Data={ele} />;
-    //   })}
-    // </div>
-    // 
-    // <>
-    // {x==true ? <Comp1/> : <Comp2/>}
-    // </>
-
-    // <Hook1/>
-    // <UseState/>
-    
-
-  
+    <BrowserRouter>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/team">Team</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link><br/>
+            </li>
+          </ul>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
+        </Routes>
+    </BrowserRouter>
   );
 }
+
 export default App;
+//     Price: "200/-",
+//     Brand: "USPA",
+//   },
+//   {
+//     image: Myimage,
+//     Price: "50000/-",
+//     Brand: "Thub",
+//   },
+//   {
+//     image: Myimage,
+//     Price: "30000/-",
+//     Brand: "Aditya",
+//   },
+//   {
+//     image: Myimage,
+//     Price: "5000/-",
+//     Brand: "Rare Rabbit",
+//   },
+// ];
+// var x=false;
 
+// const [x, Setx] = useState(0);
+// useEffect(() => {
+//   console.log("Excuted");
 
+// }, [x]);
 
+//   return (
+
+//     // <div class="parent">
+//     //   {MyCards.map((ele) => {
+//     //     return <FunctionComponent Data={ele} />;
+//     //   })}
+//     // </div>
+//     //
+//     // <>
+//     // {x==true ? <Comp1/> : <Comp2/>}
+//     // </>
+
+//     // <Hook1/>
+//     // <UseState/>
+
+//   );
+// }
 
 // import { useState } from "react";
 // import reactLogo from "./assets/react.svg";
