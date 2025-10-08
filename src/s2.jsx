@@ -1,12 +1,11 @@
 import React from "react";
-
 const S2=()=>{
     return(
-        <>
-        <label>RollNumber: </label>
-        <input type="text" placeholder="Enter your rollnumber: "/><br/><hr/>
-        </>
+    <>
+    <br/><br/>
+    <label>Phone Number: </label>
+    <input type="text" placeholder="Enter your mobile number"/>
+    </>
     )
 }
-
 export default S2;

@@ -1,5 +1,6 @@
 import { useState } from "react";
-function Hook1(){
+import './Hook.css';
+function Hook1_app(){
     const [Data, setData] = useState(0);
   const Change=()=>{
     setData(Data+1)
@@ -11,4 +12,4 @@ function Hook1(){
     </>
   );
 }
-export default Hook1;
+export default Hook1_app;

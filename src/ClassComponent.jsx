@@ -1,11 +1,9 @@
-import React ,{ Component } from "react"
-
+import React,{Component} from "react";
 class ClassComponent extends Component{
     render(){
         return(
-            <h1>This is a ClassComponent</h1>
+            <h1>Class-Component</h1>
         )
     }
 }
-
 export default ClassComponent;

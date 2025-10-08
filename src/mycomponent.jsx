@@ -1,8 +1,9 @@
-import React from "react";
-
-const mycomponent = () => {
-    return (
-        <h1>Hello, World!</h1>
-    )
+import React,{Component} from "react";
+class MyComponent extends Component{
+    render(){
+        return(
+            <h1>Class-component</h1>
+        )
+    }
 }
-export default mycomponent;
+export default MyComponent;
