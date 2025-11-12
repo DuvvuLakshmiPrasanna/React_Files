@@ -39,8 +39,16 @@
 
 .read-the-docs {
   color: #888;
-} */
+}
 .myimg{
   width: 400px;
   height: 300px;
+} */
+
+.head{
+  width:500px;
+  height:100px;
+  border: 3px solid rgb(255, 255, 255);
+  color :white;
+  font-size: 30px;
 }
